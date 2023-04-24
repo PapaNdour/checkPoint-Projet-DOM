@@ -141,10 +141,14 @@ aimeCoeur.addEventListener('click', () =>{
         choix= false;
 
         const section = document.getElementById('Aimer0'); // Récupère la section
-        const nouveauParagraphe = document.createElement('p'); // Crée un nouvel élément paragraphe
-        nouveauParagraphe.id = 'OK0'; // Définit l'identifiant du paragraphe
-        nouveauParagraphe.textContent = "J'aime!"; // Ajoute du texte au paragraphe
-        section.appendChild(nouveauParagraphe); // Ajoute le paragraphe à la section
+        
+        //const nouveauParagraphe = document.createElement('p'); // Crée un nouvel élément paragraphe
+        //nouveauParagraphe.id = 'OK0'; // Définit l'identifiant du paragraphe
+        //nouveauParagraphe.textContent = "J'aime!"; // Ajoute du texte au paragraphe
+        //section.appendChild(nouveauParagraphe); // Ajoute le paragraphe à la section
+        
+        section.innerHTML='<p id="OK0">J\'aime</p>';//Waoooo! Une ligne pour le prix de 4!
+
         //---------------------------------------------------------------------------------------------
         //Supprimer code je n'aime pas 02 methodes :
         //const paragrapheASupprimer = document.querySelector('.fa-thumbs-down'); // Methode 2 Récupère le paragraphe à supprimer
